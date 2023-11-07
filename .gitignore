@@ -3,7 +3,9 @@
 /node_modules
 /prisma/migrations
 
-.env
+# .env
+# .env.tset
+.env*
 
 # Logs
 logs
