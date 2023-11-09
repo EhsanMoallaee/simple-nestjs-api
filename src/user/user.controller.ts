@@ -11,8 +11,8 @@ export class UserController {
 
     constructor(private readonly userService: UserService) {}
 
-    @Get('me')
     @HttpCode(HttpStatus.OK)
+    @Get('me')
     getMe(@GetUser() user: User) {
         return user;
     }

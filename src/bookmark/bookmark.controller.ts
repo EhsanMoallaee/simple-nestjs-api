@@ -40,8 +40,8 @@ export class BookmarkController {
         return this.bookmarkService.editBookmarkById(userId, bookmarkId, dto);
     }
     
-    @Delete(':id')
     @HttpCode(HttpStatus.NO_CONTENT)
+    @Delete(':id')
     deleteBookmarkById(
         @GetUser('id') userId: number,
         @Param('id', ParseIntPipe) bookmarkId: number
